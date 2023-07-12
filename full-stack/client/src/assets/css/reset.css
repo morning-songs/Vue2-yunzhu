@@ -1,0 +1,75 @@
+body, 
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+ol,
+dl,
+dd,
+dt,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Arial,sans-serif;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+b,
+i,
+em,
+strong {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button {
+    border: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+/* 取消focus样式 */
+:focus {
+    outline: none;
+}
+

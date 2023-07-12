@@ -1,0 +1,63 @@
+// 侧边菜单栏
+@menuWidth: 200px; // 菜单正常宽度
+@menuFoldWidth: 60px; // 菜单折叠宽度
+
+// 白色主题
+@whiteMainBgc:  rgb(242, 246, 244);
+@whiteMainColor:    #272a27;
+// @whiteMainHoverColor:   #8d9d99;
+// @whiteMainHoverBgc: rgb(228, 240, 232);
+// @whiteMainActiveColor: #89a8c8;
+@whiteMainBoxShadow: #797c7f;
+
+// 黑色主题
+@darkMainBgc: rgb(27, 32, 30);
+@darkMainColor: #e0d7d7;
+// @darkMainHoverColor: #a3a6aa;
+// @darkMainHoverBgc: rgb(84, 81, 81);
+// @darkMainActiveColor: #aeb7c0;
+@darkMainBoxShadow: #696a6b;
+
+// 自定义主题色
+@mainBgc: @whiteMainBgc; // 菜单背景色
+@mainColor: @whiteMainColor; // 菜单字体颜色
+@mainHoverColor: rgb(18, 79, 21) !important; // 悬停字体色
+@mainHoverBgc: rgb(153, 156, 153) !important; // 悬停背景色
+@mainActiveColor: rgb(27, 194, 127); // 选中文字颜色
+@mainBoxShadow: @whiteMainBoxShadow; // 盒子阴影色
+
+// 所有过渡持续时间
+@duration: 0.3s; 
+
+// 顶部导航栏
+
+// 顶部标签栏
+@borderRaduis: 4px;
+// 主体内容区
+
+// 导出变量
+:export {
+    // 自定义主题色
+    // 左侧菜单
+    mainBgc: @mainBgc; // 背景色
+    mainColor: @mainColor; // 字体色
+    // mainHoverColor: @mainHoverColor; // 悬停字体色
+    // mainHoverBgc: @mainHoverBgc; // 悬停背景色
+    // mainActiveColor: @mainActiveColor; // 选中字体色
+    mainBoxShadow: @mainBoxShadow; // 右侧阴影色
+
+    // 左侧菜单，白色主题
+    whiteMainBgc:   @whiteMainBgc;
+    whiteMainColor: @whiteMainColor;
+    // whiteMainHoverColor:    @whiteMainHoverColor;
+    // whiteMainHoverBgc:  @whiteMainHoverBgc;
+    // whiteMainActiveColor:   @whiteMainActiveColor;
+    whiteMainBoxShadow: @whiteMainBoxShadow;
+    // 左侧菜单，黑色主题
+    darkMainBgc:    @darkMainBgc;
+    darkMainColor:  @darkMainColor;
+    // darkMainHoverColor: @darkMainHoverColor;
+    // darkMainHoverBgc:   @darkMainHoverBgc;
+    // darkMainActiveColor:    @darkMainActiveColor;
+    darkMainBoxShadow:  @darkMainBoxShadow;
+}

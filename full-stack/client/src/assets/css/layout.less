@@ -1,0 +1,81 @@
+#app {
+    position: relative;
+
+    //  左侧菜单栏
+    // 折叠
+    .side-fold {
+        .l-sidebar-container {
+            box-sizing: border-box;
+            width: @menuFoldWidth;
+
+            /deep/ .logo-container {
+                h1 {
+                    opacity: 0;
+                    transition: all @duration;
+                }
+            }
+            
+            /deep/ span {
+                color: transparent !important;
+                transition: all @duration;
+            }
+
+            /deep/ .el-submenu__icon-arrow {
+                display: none;
+                transition: all @duration;
+            }
+        }
+        .r-main-container {
+            left: @menuFoldWidth;
+            width: calc(100% - @menuFoldWidth);
+        }
+    }
+    // 正常
+    .side-unfold {
+        .l-sidebar-container {
+            box-sizing: border-box;
+            width: @menuWidth;
+        }
+        .r-main-container {
+            left: @menuWidth;
+            width: calc(100% - @menuWidth);
+        }
+    }
+
+    .l-sidebar-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        color: inherit;
+        background-color: inherit;
+        border-right: 1px solid @mainBoxShadow;
+        transition: all @duration;
+    }
+    //  右主体内容
+    .r-main-container {
+        position: absolute;
+        top: 0;
+        background-color: inherit;
+        transition: all @duration;
+        // 顶部导航栏
+        .topbar-container {
+            display: flex;
+            justify-content: space-between; // 两端对齐
+            align-items: center; // 垂直居中
+            height: 50px;
+            padding: 0 16px;
+        }
+        // 顶部标签栏
+        .t-tag-container {
+            box-sizing: border-box;
+            height: 30px;
+            padding: 2px 16px;
+            box-shadow: 2px 0px 2px 0px @mainBoxShadow;
+        }
+        // 右下内容展示区
+        .r-content {
+            min-height: calc(100vh - 80px);
+        }
+    }
+}
